@@ -1,0 +1,42 @@
+.Container {
+  background-color: #fdfdfd;
+  max-width: 272px;
+  max-height: fit-content;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 7px;
+  margin: 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  .cardHeader {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    svg {
+      width: 35px;
+    }
+  }
+
+  .cardBody {
+    display: flex;
+    flex-direction: column;
+
+    .cardContent {
+      display: flex;
+      gap: 10px;
+      margin: 10px 0;
+
+      svg {
+        width: 35px;
+      }
+
+      .textContent {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+}

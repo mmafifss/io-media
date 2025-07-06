@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
+import ClientToastContainer from "./components/ClientToastContainer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,8 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <AppRouterCacheProvider options={{ key: "css" }}>
+          <ClientToastContainer />
+          {children}
+        </AppRouterCacheProvider>
       </body>
     </html>
   );
 }
+export const dynamic = "force-dynamic"; // Force dynamic rendering
+export const revalidate = 0; // Disable static generation caching

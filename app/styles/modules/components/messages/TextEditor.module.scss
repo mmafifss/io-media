@@ -1,0 +1,98 @@
+@import '/styles/helpers/variables';
+
+.wrapper {
+  padding: 10px 5px;
+  background-color: #efefef;
+  border-radius: 7px;
+}
+
+.actionEditor {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.upBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.media {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 8px;
+}
+
+.imgBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+
+  svg path {
+    fill: $blue-2 !important;
+  }
+}
+
+.imgLogo {
+  width: 18px;
+  height: 18px;
+}
+
+.videoBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+
+  svg path {
+    fill: $green-1 !important;
+  }
+}
+
+.docBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  svg path {
+    fill: #9c40e4 !important;
+  }
+}
+
+.emojiBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  svg path {
+    fill: $brown-2 !important;
+  }
+}
+
+.emojiLogo {
+  width: 20px;
+  height: 20px;
+}

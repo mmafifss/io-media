@@ -1,0 +1,41 @@
+// Line clamping
+@mixin line-clamp($line-count) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-count;
+}
+
+//Breakpoints using min-width
+@mixin sm-screen {
+  @media only screen and (min-width: $bp-sm * 1px) {
+    @content;
+  }
+}
+@mixin md-screen {
+  @media only screen and (min-width: $bp-md * 1px) {
+    @content;
+  }
+}
+@mixin lg-screen {
+  @media only screen and (min-width: $bp-lg * 1px) {
+    @content;
+  }
+}
+@mixin xl-screen {
+  @media only screen and (min-width: $bp-xl * 1px) {
+    @content;
+  }
+}
+
+// max height in rem
+@mixin max-lines($base-lineheight, $lines) {
+  overflow: hidden;
+  max-height: calc($lines * $base-lineheight);
+}
+
+// fixed height in rem
+@mixin fixed-lines($base-lineheight, $lines) {
+  overflow: hidden;
+  height: calc($lines * $base-lineheight);
+}

@@ -1,0 +1,283 @@
+@import '../helpers/variables';
+
+@mixin sidebarPadding {
+  padding: 0.4688rem 1.5rem;
+}
+.logoSidebar {
+  @include sidebarPadding();
+}
+
+.sidebarContainer {
+  min-width: 16rem;
+  height: 100vh;
+  z-index: 20;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #e3e3e3;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .submenu {
+    padding: 10px;
+    max-width: 300px;
+  }
+
+  .sidebarSubContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .sidebarList {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 60px;
+
+    &:hover {
+      transition: 1s all ease-out;
+      overflow-y: scroll;
+    }
+
+    .sidebarListMenu {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      @include sidebarPadding;
+      justify-content: space-between;
+
+      svg {
+        color: '#323232';
+      }
+    }
+
+    .sidebarListLabel {
+      font-size: 14px;
+    }
+
+    .sidebarListMenuSelected {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 0.4688rem 1rem;
+      background-color: $darkgray;
+      color: $light;
+      transition: all 0.5s ease;
+      justify-content: space-between;
+      margin: 0 10px;
+      border-radius: 10px;
+
+      svg {
+        fill: $light;
+      }
+    }
+
+    .sidebarListMenu:active,
+    .sidebarListMenu:hover {
+      background-color: '#808080';
+      border-radius: 10px;
+    }
+
+    .subtitles {
+      font-size: $font-12;
+      font-weight: 400;
+      color: #808080;
+      margin-bottom: -8px;
+      @include sidebarPadding();
+    }
+
+    .subSidebarListMenu {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      @include sidebarPadding;
+      justify-content: space-between;
+      margin: 5px 0;
+      color: #808080;
+
+      svg {
+        fill: '$light';
+      }
+    }
+
+    .subSidebarListMenuSelected {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 0.4688rem 1rem;
+      background-color: #e3e3e3;
+      color: $darkgray;
+      transition: all 0.5s ease;
+      justify-content: space-between;
+      margin: 0 10px;
+      border-radius: 10px;
+
+      svg {
+        fill: $darkgray;
+      }
+    }
+  }
+
+  .toggleButtonBox {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #323232; /* Adjust background color as needed */
+    border: 1px solid #ccc; /* Adjust border color as needed */
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $light;
+  }
+
+  .iconToogleBox {
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    svg {
+      fill: $light;
+    }
+  }
+}
+
+.hideSidebarContainer {
+  width: 60px;
+  height: 100vh;
+  z-index: 20;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #e3e3e3;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sidebarSubContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .sidebarList {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 60px;
+
+    &:hover {
+      transition: 1s all ease-out;
+      overflow-y: scroll;
+    }
+
+    .sidebarListMenu {
+      padding: 0.4688rem 1.1rem;
+      margin: 1px 0;
+
+      svg {
+        color: '#323232';
+      }
+    }
+
+    .sidebarListLabel {
+      font-size: 14px;
+    }
+
+    .sidebarListMenuSelected {
+      padding: 0.4688rem 0 0.5rem 0.6rem;
+      background-color: $darkgray;
+      color: $light;
+      transition: all 0.5s ease;
+      justify-content: space-between;
+      margin: 0 10px;
+      border-radius: 10px;
+
+      svg {
+        fill: $light;
+      }
+    }
+
+    .sidebarListMenu:active,
+    .sidebarListMenu:hover {
+      background-color: '#808080';
+      border-radius: 10px;
+    }
+
+    .subtitles {
+      font-size: $font-12;
+      font-weight: 400;
+      color: #808080;
+      margin-bottom: -8px;
+      @include sidebarPadding();
+    }
+  }
+
+  .toggleButtonBox {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #323232; /* Adjust background color as needed */
+    border: 1px solid #ccc; /* Adjust border color as needed */
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #323232;
+  }
+
+  .iconToogleBox {
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    color: $light;
+  }
+}
+
+.subSidebarListMenu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  @include sidebarPadding;
+  justify-content: space-between;
+  margin: 5px 0;
+  color: #808080;
+
+  svg {
+    fill: '$light';
+  }
+}
+
+.subSidebarListMenuSelected {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.4688rem 1rem;
+  background-color: #e3e3e3;
+  color: $darkgray;
+  transition: all 0.5s ease;
+  justify-content: space-between;
+  margin: 0 10px;
+  border-radius: 10px;
+
+  svg {
+    fill: $darkgray;
+  }
+}

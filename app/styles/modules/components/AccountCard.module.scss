@@ -1,0 +1,36 @@
+.container {
+  padding: 20px;
+  width: 100%;
+  border-radius: 7px;
+  background-color: #fdfdfd;
+  height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.cardHeader {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e3e3e3;
+  &:last-child {
+    border: none;
+  }
+  &:last-of-type {
+    border: none;
+  }
+}
+
+.countryContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

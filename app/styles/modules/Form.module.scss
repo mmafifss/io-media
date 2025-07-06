@@ -1,0 +1,64 @@
+@import '../helpers/variables';
+
+.formContainer {
+  transform: translateY(25%);
+  margin: auto;
+  width: $auth-content-width;
+  padding: 20px 0px;
+  background: #fdfdfd;
+  box-shadow: 5px 5px 12px 3px rgba(50, 50, 50, 0.15);
+  border-radius: 7px;
+  .formHeader {
+    text-align: center;
+
+    .formHeaderText {
+      font-size: $font-32;
+      margin-bottom: 1.25rem;
+    }
+
+    .formHeaderSubtext {
+      font-size: $font-20;
+      color: $gray-1;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .formInputContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.25rem;
+
+    .formBox {
+      margin: 0.625rem 0;
+
+      .formInput {
+        padding-left: 9px;
+        width: 100%;
+        border: 1px solid #808080;
+        border-radius: 7px;
+        height: 2.5rem;
+      }
+
+      .eyeIcon {
+        position: relative;
+        top: 0.5em;
+        right: 2.2em;
+        cursor: pointer;
+      }
+    }
+
+    .btnInput {
+      color: $light;
+      margin-top: 20px;
+      font-size: $font-14 !important;
+      text-transform: none;
+      width: 100%;
+      background: #323232;
+      border-radius: 3.125rem;
+      -webkit-border-radius: 3.125rem;
+      -moz-border-radius: 3.125rem;
+      -ms-border-radius: 3.125rem;
+      -o-border-radius: 3.125rem;
+    }
+  }
+}

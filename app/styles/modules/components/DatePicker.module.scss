@@ -1,0 +1,45 @@
+.datePickerContainer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  .datePicker {
+    color: #212529;
+    height: 40px;
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid #bfbfbf;
+    transition:
+      border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
+    font-size: 14px;
+    font-family: 'inter';
+    padding-left: 15px;
+
+    .react-datepicker__header {
+      background: transparent;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    right: 10px; // Atur posisi kanan
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #808080;
+    width: 20px;
+    height: 20px;
+  }
+
+  .iconWithError {
+    position: absolute;
+    right: 10px; // Atur posisi kanan
+    top: 35%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #808080;
+    width: 20px;
+    height: 20px;
+  }
+}

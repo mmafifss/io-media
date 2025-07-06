@@ -1,0 +1,145 @@
+@import 'main.scss';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family:
+    Inter,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+  color: $darkgray;
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 1px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: 'nset 0 0 6px grey';
+    border-radius: '5px';
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #808080;
+    border-radius: 15px;
+    height: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: '#323232';
+    max-height: '10px';
+  }
+}
+
+fieldset {
+  border: none;
+}
+
+a {
+  color: $blue-2;
+  font-weight: 700;
+}
+
+body {
+  background-color: $gray-4;
+  font-size: $font-14;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+.containerChatRoom {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    /* Hide the scrollbar for WebKit browsers */
+    width: 0;
+    height: 0;
+  }
+}
+
+.newMessage {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    /* Hide the scrollbar for WebKit browsers */
+    width: 0;
+    height: 0;
+  }
+}
+
+.MuiTableCell-head {
+  font-weight: 700;
+}
+
+.MuiTypography-root {
+  font-family:
+    Inter,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+}
+
+.MuiPaper-root {
+  box-shadow: none;
+}
+
+.MuiTablePagination-root {
+  overflow-x: hidden;
+
+  .MuiToolbar-root {
+    padding-right: 14px;
+  }
+
+  .MuiTablePagination-selectLabel {
+    display: none;
+  }
+  .MuiTablePagination-displayedRows {
+    display: none;
+  }
+  .MuiInputBase-root {
+    display: none;
+  }
+  .MuiTablePagination-actions {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+
+    .MuiButtonBase-root {
+      border: 1px solid #323232;
+    }
+    .MuiButtonBase-root:disabled {
+      border: 1px solid #bfbfbf;
+    }
+  }
+}
+
+.MuiPaper-root {
+  background-color: #fdfdfd;
+}
+.MuiList-root {
+  background-color: #fdfdfd;
+  border-radius: 7px;
+  box-shadow: 2px 2px 10px 3px rgba(50, 50, 50, 0.12);
+}

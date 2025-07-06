@@ -1,0 +1,12 @@
+.LinkTag {
+  text-decoration: none;
+
+  &:hover {
+    p {
+      color: #0b73e6;
+    }
+    span {
+      color: #808080;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+$container-width: 1164px;
+$auth-content-width: 574px;
+
+// Breakpoints
+$bp-sm: 576;
+$bp-md: 768;
+$bp-lg: 992;
+$bp-xl: 1200;
+
+$post-line-height: 1.25rem;
+
+// Colors
+// 'black' & 'white'
+$darkgray: #323232;
+$light: #fdfdfd;
+
+// gray - lightgray
+$gray-1: #808080;
+$gray-2: #bfbfbf;
+$gray-3: #e3e3e3;
+$gray-4: #efefef;
+
+// blue - lightblue
+$blue-1: #1057a7;
+$blue-2: #0b73e6;
+$blue-3: #70ddff;
+$blue-4: #d2e4f8;
+
+// brown - cream
+$brown-1: #bb7a07;
+$brown-2: #e69b17;
+$brown-3: #ffd560;
+$brown-4: #f7e5c4;
+
+// orange - light pink
+$orange-1: #e9613a;
+$orange-2: #ff7e5a;
+$orange-3: #ffaa92;
+$orange-4: rgba(233, 97, 58, 0.25);
+
+// green - light green
+$green-1: #36a92c;
+$green-2: #46d639;
+$green-3: #79f46e;
+$green-4: #cbe8c9;
+
+// red - light purple
+$red-1: #c52424;
+$red-2: #e34747;
+$red-3: #ff8080;
+$red-4: #efc7c7;
+
+// Font sizes
+$font-12: 0.75rem;
+$font-14: 0.875rem;
+$font-16: 1rem;
+$font-20: 1.25rem;
+$font-24: 1.5rem;
+$font-32: 2rem;
+$font-40: 2.5rem;
+$font-55: 3.4375rem;
+$font-72: 4.5rem;
+
+// Line height
+$line-height-14: 19.6px;
+$line-height-16: 22.4px;
+$line-height-20: 28px;
+$line-height-24: 33.6px;
+$line-height-32: 44.8px;
+$line-height-40: 56px;
+$line-height-55: 77px;
+$line-height-72: 100.8px;

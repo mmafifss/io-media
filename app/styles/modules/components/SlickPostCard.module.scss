@@ -1,0 +1,18 @@
+.SlickContainer {
+  background-color: #fdfdfd;
+  overflow: hidden;
+  border-radius: 7px;
+  max-height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  .SlickHeader {
+    display: flex;
+    padding: 1.25rem;
+    align-items: center;
+    gap: 10px;
+
+    h1 {
+      margin-left: 10px;
+    }
+  }
+}
