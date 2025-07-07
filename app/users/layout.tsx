@@ -11,7 +11,16 @@ interface ILayoutProps {
   isMessages?: boolean;
 }
 
-const Layout = ({ children, title, isDetail, isMessages }: ILayoutProps) => {
+type NextPageWithLayout<P = {}> = React.FC<P> & {
+  getLayout?: (page: ReactNode) => ReactNode;
+};
+
+const Layout: NextPageWithLayout<any> = ({
+  children,
+  title,
+  isDetail,
+  isMessages,
+}: ILayoutProps) => {
   return (
     <Box>
       <Head>
@@ -28,5 +37,7 @@ const Layout = ({ children, title, isDetail, isMessages }: ILayoutProps) => {
     </Box>
   );
 };
+
+Layout.getLayout = (page) => <Layout>{page}</Layout>;
 
 export default Layout;

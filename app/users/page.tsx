@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import { FileDownload } from "@mui/icons-material";
 import type { NextPage } from "next";
 import { DynamicButton } from "../components/button";
 import { TablePage } from "../components/tablePage";
