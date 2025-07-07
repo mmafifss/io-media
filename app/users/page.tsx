@@ -13,7 +13,7 @@ import { useAppContext } from "../context/store";
 import { useDelayUnmount, useFirstLoading } from "../hooks/customHooks";
 import { useUsers } from "../hooks/useUsers";
 
-export const columnAllUsers = [
+const columnAllUsers = [
   { id: 1, field: "name", header: "Account Name" },
   { id: 2, field: "email", header: "Email Address" },
 ];

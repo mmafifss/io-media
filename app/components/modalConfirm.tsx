@@ -76,13 +76,7 @@ export const ModalConfirm = (props: IModalConfirm) => {
               objectFit: "cover",
               margin: "20px auto",
             }}
-            src={
-              props.image
-                ? props.image
-                : props.type === "info"
-                ? imageRegistry.modal_info
-                : imageRegistry.modal_confirm
-            }
+            src={imageRegistry.not_found}
             alt="foto sampul"
             width={300}
             height={300}
